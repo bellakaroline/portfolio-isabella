@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap');
+
+:root {
+  /* Cores */
+  --color-bg-main: #0b0b0d;
+  --color-bg-surface: #1a1a1e;
+  --color-border-subtle: #27272a;
+  --color-border-primary: rgba(216, 76, 125, 0.15);
+  --color-text-primary: #f4f4f5;
+  --color-text-secondary: #a1a1aa;
+  --color-primary: #d84c7d;
+  --color-bg-primary: rgba(216, 76, 125, 0.05);
+  --color-white: #ffffff;
+  --color-text-on-primary: #ffffff;
+  --shadow-card-stack: 0 -4px 24px rgba(0, 0, 0, 0.4);
+  --color-bg-header: rgba(11, 11, 13, 0.85);
+  --color-bg-mobile: rgba(11, 11, 13, 0.95);
+
+  /* Famílias tipográficas */
+  --font-family-base: 'Space Grotesk', sans-serif;
+  --font-family-support: 'Inter', sans-serif;
+
+  /* Tamanhos de texto */
+  --text-xs: 14px;
+  --text-sm: 16px;
+  --text-md: 20px;
+  --text-lg: 24px;
+  --text-xl: 32px;
+  --text-2xl: 40px;
+  --text-3xl: 64px;
+
+  /* Pesos */
+  --font-regular: 400;
+  --font-bold: 700;
+
+  /* Espaçamentos — escala base */
+  --spacing-xs: 2px;
+  --spacing-sm: 4px;
+  --spacing-md: 8px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  --spacing-3xl: 64px;
+
+  /* Espaçamentos — layout semântico */
+  --spacing-section: 180px;
+  --spacing-section-title: 40px;
+}
+
+/* ── Tema claro ──────────────────────────────────────────── */
+:root[data-theme="light"] {
+  --color-bg-main:          #F7F8FA;
+  --color-bg-surface:       #FFFFFF;
+  --color-border-subtle:    #E6E9ED;
+  --color-border-primary:   rgba(216, 76, 125, 0.15);
+  --color-text-primary:     #0F172A;
+  --color-text-secondary:   #64748B;
+  --color-primary:          #D84C7D;
+  --color-bg-primary:       rgba(216, 76, 125, 0.08);
+  --color-white:            #FFFFFF;
+  --color-text-on-primary:  #ffffff;
+  --shadow-card-stack:      0 -4px 24px rgba(0, 0, 0, 0.08);
+  --color-bg-header:        rgba(247, 248, 250, 0.90);
+  --color-bg-mobile:        rgba(247, 248, 250, 0.98);
+}
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--text-sm);
+  font-weight: var(--font-regular);
+  line-height: 24px;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-main);
+  -webkit-font-smoothing: antialiased;
+}
