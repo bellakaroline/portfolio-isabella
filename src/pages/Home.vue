@@ -10,6 +10,10 @@
         <BaseChip content="PRODUCT UX DESIGNER" variant="section-title" />
         <h1 class="hero__name">Isabella Viana</h1>
         <p class="hero__description">{{ i18n.home.hero.description }}</p>
+        <p class="hero__status">
+          <span class="status-dot"></span>
+          {{ i18n.status.available }}
+        </p>
         <div class="hero__buttons">
           <BaseButton
             :text="i18n.home.hero.contactBtn"
@@ -340,11 +344,46 @@ onMounted(() => {
 .hero__buttons {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: var(--spacing-lg);
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.hero__status {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  font-weight: var-(--font-bold);
+  color: var(--color-text-primary);
+}
+
+/* bolinha */
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #4ade80;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgb(74, 222, 128, 0.6);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* animação */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+}
 /* ─── Ferramentas — marquee ─────────────────────────────── */
 .ferramentas {
   padding: 120px 0;

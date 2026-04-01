@@ -8,23 +8,23 @@
 // ------------------------------------------------------------
 export const colors = {
   // Fundos
-  'bg-main':    '#0B0B0D',   // fundo geral da página
-  'bg-surface': '#1A1A1E',   // cards, painéis, superfícies elevadas
+  'bg-main': '#0B0B0D', // fundo geral da página
+  'bg-surface': '#1A1A1E', // cards, painéis, superfícies elevadas
 
   // Bordas
-  'border-subtle':  '#27272A',               // divisores sutis
+  'border-subtle': '#27272A', // divisores sutis
   'border-primary': 'rgba(216,76,125,0.15)', // borda com cor primária (15%)
 
   // Texto
-  'text-primary':   '#F4F4F5', // texto principal
+  'text-primary': '#F4F4F5', // texto principal
   'text-secondary': '#A1A1AA', // texto de suporte, labels, captions
 
   // Marca
-  'primary':    '#D84C7D',               // cor de destaque (pink)
+  primary: '#D84C7D', // cor de destaque (pink)
   'bg-primary': 'rgba(216,76,125,0.05)', // fundo sutil com cor primária (5%)
 
   // Utilitários
-  'white': '#FFFFFF',
+  white: '#FFFFFF',
 }
 
 // ------------------------------------------------------------
@@ -44,22 +44,22 @@ export const colors = {
 // ------------------------------------------------------------
 export const typography = {
   // Famílias
-  'font-family-base':    "'Space Grotesk', sans-serif",
+  'font-family-base': "'Space Grotesk', sans-serif",
   'font-family-support': "'Inter', sans-serif",
 
   // Escala de tamanhos
   // { size, lineHeight, family } — family só aparece nas exceções
-  'text-xs':  { size: '14px', lineHeight: '20px' },  // caption · nav · btn-small
-  'text-sm':  { size: '16px', lineHeight: '24px' },  // body · btn-large · section-label
-  'text-md':  { size: '20px', lineHeight: '30px', family: "'Inter', sans-serif" }, // H5 (Inter)
-  'text-lg':  { size: '24px', lineHeight: '32px' },  // H4
-  'text-xl':  { size: '32px', lineHeight: '40px' },  // H3
-  'text-2xl': { size: '40px', lineHeight: '48px' },  // H2
-  'text-3xl': { size: '64px', lineHeight: '72px' },  // H1
+  'text-xs': { size: '14px', lineHeight: '20px' }, // caption · nav · btn-small
+  'text-sm': { size: '16px', lineHeight: '24px' }, // body · btn-large · section-label
+  'text-md': { size: '20px', lineHeight: '30px', family: "'Inter', sans-serif" }, // H5 (Inter)
+  'text-lg': { size: '24px', lineHeight: '32px' }, // H4
+  'text-xl': { size: '32px', lineHeight: '40px' }, // H3
+  'text-2xl': { size: '40px', lineHeight: '48px' }, // H2
+  'text-3xl': { size: '64px', lineHeight: '72px' }, // H1
 
   // Pesos
   'font-regular': 400,
-  'font-bold':    700,
+  'font-bold': 700,
 }
 
 // Referência de uso por elemento:
@@ -83,17 +83,17 @@ export const typography = {
 // ------------------------------------------------------------
 export const spacing = {
   // Escala base
-  'spacing-xs':  '2px',
-  'spacing-sm':  '4px',
-  'spacing-md':  '8px',
-  'spacing-lg':  '16px',
-  'spacing-xl':  '24px',
+  'spacing-xs': '2px',
+  'spacing-sm': '4px',
+  'spacing-md': '8px',
+  'spacing-lg': '16px',
+  'spacing-xl': '24px',
   'spacing-2xl': '32px',
   'spacing-3xl': '64px',
 
   // Tokens de layout semânticos
-  'spacing-section':       '180px', // espaço entre seções da página
-  'spacing-section-title': '40px',  // espaço entre título da seção e conteúdo
+  'spacing-section': '180px', // espaço entre seções da página
+  'spacing-section-title': '40px', // espaço entre título da seção e conteúdo
 }
 
 // ------------------------------------------------------------
@@ -106,12 +106,12 @@ export const vuetifyTheme = {
     dark: {
       dark: true,
       colors: {
-        background:      '#0B0B0D',
-        surface:         '#1A1A1E',
-        primary:         '#D84C7D',
-        'on-primary':    '#FFFFFF',
+        background: '#0B0B0D',
+        surface: '#1A1A1E',
+        primary: '#D84C7D',
+        'on-primary': '#FFFFFF',
         'on-background': '#F4F4F5',
-        'on-surface':    '#F4F4F5',
+        'on-surface': '#F4F4F5',
       },
     },
   },

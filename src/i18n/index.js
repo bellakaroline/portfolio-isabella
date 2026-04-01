@@ -9,6 +9,10 @@ export const messages = {
       cta: 'Contate-me',
     },
 
+    status: {
+      available: 'Disponível para trabalho remoto',
+    },
+
     home: {
       hero: {
         description:
@@ -636,6 +640,10 @@ export const messages = {
       about: 'About',
       contact: 'Contact',
       cta: 'Contact me',
+    },
+
+    status: {
+      available: 'Available for remote opportunities',
     },
 
     home: {
