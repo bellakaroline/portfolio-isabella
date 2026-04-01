@@ -69,8 +69,10 @@ defineProps({
 const router = useRouter()
 const { i18n } = useI18n()
 
-const WHATSAPP = 'https://api.whatsapp.com/send?phone=5567993225063'
-function openWhatsApp() { window.open(WHATSAPP, '_blank') }
+const WHATSAPP = 'https://api.whatsapp.com/send?phone=5567991151748'
+function openWhatsApp() {
+  window.open(WHATSAPP, '_blank')
+}
 </script>
 
 <style scoped>
@@ -156,13 +158,19 @@ function openWhatsApp() { window.open(WHATSAPP, '_blank') }
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   flex-shrink: 0;
-  transition: background-color 0.25s ease, border-color 0.25s ease;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .cta__social-icon {
   font-size: 16px;
   color: var(--color-primary);
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
   line-height: 1;
 }
 
